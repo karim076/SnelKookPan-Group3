@@ -1,0 +1,36 @@
+wat voor paginas wilt u hebben
+wat voor thema wilt u hebben
+krijgen wij informatie van wat je kunt huren
+hoeveel gasten mag je maximaal
+
+
+bedrijf naam: snelkookpan
+naam: fred
+kleuren: iets opvalent er tussen
+thema: profecioneel en duidelijk
+functies: acomodaties toevoegen, gegevens managen, reseveren
+paginas: overzicht pagina (eerste die je ziet), detail pagina, resevering pagina, Admin pagina, Over ons pagina
+inloggen: medewerkers inloggen (als het kan ook klanten)
+filters(op overzicht pagina): locatie, naam, datum, prijs 
+
+overzicht pagina:
+huurprijs 
+omgeving 
+
+detail pagina:
+alle informatie
+recentie achterlaten (lage prioriteit)
+
+
+resevering pagina:
+fornulier voor gegevens 
+succes melding of dankjewel melding
+
+
+Admin pagina:
+orders terug kunnen zien
+huizen kunnen managen (crud)
+
+Over ons pagina:
+informatie krijgen we
+

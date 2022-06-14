@@ -1,0 +1,28 @@
+watvoor paginas wilt u hebben?
+\
+wat moet de style worden van de site?
+\
+waar moeten we de informatie vandaan halen voor de site?
+\
+
+
+
+_____________________________________________________________________________________________________________________________________________________________________________________________
+design aan ons overhouden, maak er iets moois van en zorg dat het professioneel duidelijk is(met opvallend aspect).
+
+naast reserveren is het handig als we zelf dingen kunnen bij houden, en zelf accomodaties bij kunnen houden.
+
+- overzicht pagina((homepagina), met standaard informatie, huurprijs p.p, welke omgeving, zoekopties, etc.), 
+- detailspagina van woningen zelf(plaatjes en info per huisje, als je eraan toe komt recensies toevoegen),
+- reserveringspagina(als het ingeleverd is een succesmelding),
+- adminpaginas voor achterkant (moeten orders terug kunnen zien van houden, huizen toevoegen en kunnen zien),
+- over ons pagina,
+
+
+
+filterfuncties op pagina van overzicht.
+
+als je filterd, huizen die niet beschikbaar zijn niet weergeven.
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________
