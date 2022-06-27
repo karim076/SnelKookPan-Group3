@@ -19,10 +19,15 @@
                 for ($x = 0; $x <= 10; $x++) {
             ?>
             <div class="grid_item">
-                <p>prijs</p>
-                <p>groote</p>
-                <p>slaapkamers</p>
-                <p>gasten</p>
+                <div class="big">
+                <img src="img/huis.jpg" class="img-fluid rounded-top" alt="">
+                    <div class="desc">
+                        <p>prijs</p>
+                        <p>groote</p>
+                        <p>slaapkamers</p>
+                        <p>gasten</p>
+                    </div>
+                </div>
             </div>
             <?php
                 
