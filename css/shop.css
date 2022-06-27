@@ -101,10 +101,25 @@
 
     .grid_container{
         display: grid;
-        grid-template-columns:  1fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr;
         width: 80%;
+        gap: 20px;
     }
-  
+    .big{
+      background: lightgray;
+      width: 400px;
+      height: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+    }
+    
+    .big img{
+      width: 250px;
+      height: 200px;
+    }
   /* ==========================================================================
      Helper classes
      ========================================================================== */
