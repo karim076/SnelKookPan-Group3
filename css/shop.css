@@ -86,14 +86,17 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-
+/* het werkt de sticky */
     .side_bar{
         position: sticky;
-        width: 20%;
+        height: 50vh;
+        width: 20vh;
+        top: 0;
     }
     .shop_container{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .grid_container{

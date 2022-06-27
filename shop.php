@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="shop_container">
+        <!-- Filter sidebar -->
         <div class="side_bar">
             <h2>filters</h2>
         </div>
