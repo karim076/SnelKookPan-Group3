@@ -13,6 +13,7 @@
         <div class="side_bar">
             <h2>filters</h2>
         </div>
+
         <div class="grid_container">
             
             <?php
@@ -22,10 +23,14 @@
                 <div class="big">
                 <img src="img/huis.jpg" class="img-fluid rounded-top" alt="">
                     <div class="desc">
-                        <p>prijs</p>
-                        <p>groote</p>
-                        <p>slaapkamers</p>
-                        <p>gasten</p>
+                        <div class="spacing">
+                            <p>prijs:  <span>20</span></p>
+                            <p>groote: <span>20</span></p>
+                        </div>
+                        <div class="spacing">
+                            <p>slaapkamers: <span>20</span></p>
+                            <p>gasten: <span>20</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
