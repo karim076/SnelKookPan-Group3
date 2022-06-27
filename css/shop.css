@@ -106,7 +106,7 @@
         gap: 20px;
     }
     .big{
-      background: lightgray;
+      background : lightgray;
       width: 400px;
       height: auto;
       padding: 10px;
@@ -119,6 +119,13 @@
     .big img{
       width: 250px;
       height: 200px;
+    }
+    .desc{
+      display: flex;
+      flex-direction: row;
+    }
+    .spacing{
+      padding: 10px;
     }
   /* ==========================================================================
      Helper classes
