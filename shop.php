@@ -5,6 +5,12 @@
 </head>
 <body>
     <?php require_once 'header.php'?>
+    <div class="intro">
+        <div>
+            <h1>Vakantie huizen</h1>
+        </div>
+        <img src="img/Vakantiehuis.jpg">
+    </div>
     <div class="shop_container">
         <!-- Filter sidebar -->
         <div class="side_bar">
@@ -12,7 +18,6 @@
         </div>
 
         <div class="grid_container">
-            
             <?php
                 for ($x = 0; $x <= 10; $x++) {
             ?>
