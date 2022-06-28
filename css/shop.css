@@ -86,6 +86,20 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
+
+     .intro{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 240px;
+     }
+     .intro img{
+      margin-top: -60px;
+      
+     }
+     .intro h1{
+     }
 /* het werkt de sticky */
     .side_bar{
         position: sticky;
