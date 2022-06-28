@@ -159,6 +159,8 @@ nav ul li a:hover{
 /* Current/active navbar link */
 .active {
   background-color: #04AA6D;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
