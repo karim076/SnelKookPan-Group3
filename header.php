@@ -1,7 +1,3 @@
-<?php 	
-	require_once('header.php')
-?>
-
 <header>
 	<nav>
 	    <ul class="nav_links">
