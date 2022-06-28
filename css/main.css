@@ -199,6 +199,38 @@ nav ul li a:hover{
 }
 /* Einde header */
 
+/* footer */
+footer{
+  background-color: #555555;
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  padding: 50px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footerContact p{
+  color: white;
+}
+
+.footerContact h3{
+  color: white;
+}
+
+.footerLinkjes{
+  display: flex;
+  flex-direction: column;
+  margin-right: 340px;
+  margin-left: 150px;
+}
+
+.footerLinkjes a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
 
 /* ==========================================================================
    Author's custom styles
