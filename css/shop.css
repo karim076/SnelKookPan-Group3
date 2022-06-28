@@ -92,13 +92,22 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin-bottom: 240px;
+      margin-bottom: 417px;
      }
      .intro img{
-      margin-top: -60px;
+  
       
      }
-     .intro h1{
+     .intro .mid{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 480px;
+      height: 162px;
+      border-radius: 10px;
+      margin-top: -377px;
+      background: lightgray;
+      opacity: 0.9;
      }
 /* het werkt de sticky */
     .side_bar{
