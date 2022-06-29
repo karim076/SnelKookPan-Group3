@@ -213,12 +213,19 @@ footer{
   justify-content: flex-start;
 }
 
+.footerContact{
+  line-height: 10px;
+}
+
 .footerContact p{
   color: white;
+  font-size: 17px;
 }
 
 .footerContact h3{
   color: white;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .footerLinkjes{
@@ -231,8 +238,8 @@ footer{
 .footerLinkjes a{
   color: #fff;
   text-decoration: none;
+  font-size: 20px;
 }
-
 
 
 /* ==========================================================================
