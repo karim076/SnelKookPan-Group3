@@ -4,9 +4,12 @@
     <?php require_once 'head.php' ?>
 </head>
 <body>
-	<?php// met id alle info ophalen
+
+	<?php
+        var_dump($_POST['id']);
         require_once 'backend/conn.php';
-        $query = "SELECT * FROM huisinfo WHERE id = <";
+        $id = $_POST['id'];
+        $query = "SELECT * FROM huisinfo WHERE id = $id";
         $statement = $conn->prepare($query);
         $statement->execute();
         $buy = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -15,7 +18,7 @@
     <?php require_once 'header.php' ?>
     <main>
     	<div>
-    		<img class="buyImage" src="<?php echo $huis["img"] ?>">
+    		<img class="buyImage" src="img/<?php echo $huis["img"] ?>">
     	</div>
     <?php endforeach; ?>
     </main>
