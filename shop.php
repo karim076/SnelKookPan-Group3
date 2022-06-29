@@ -47,9 +47,6 @@
                     </form>
                 </div>
             </div>
-            <form method="POST" action="buy.php">
-                <input type="hidden" value="<?php echo $huis['id'] ?>" name="id">
-            </form>
             <?php endforeach; ?>
             
             
