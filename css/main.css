@@ -232,7 +232,12 @@ footer{
   color: #fff;
   text-decoration: none;
 }
-
+/*buy page*/
+.buyImage{
+  width: 829px;
+  height: 615px;
+}
+/*end buy page*/
 
 
 /* ==========================================================================
