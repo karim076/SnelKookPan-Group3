@@ -24,7 +24,7 @@
                 <div class="centering"><p>Omgeving:  <?php echo $huis['omgeving'] ?></p></div>
                 <div class="info">
                     <div>
-                        <p> prijs: <span>&#8364; <?php echo $huis['prijs'] ?></span></p>
+                        <p>prijs: <span>&#8364; <?php echo $huis['prijs'] ?></span></p>
                         <p>groote: <span><?php echo $huis['formaat'] ?> m3</span></p>
                     </div>
                     <div>
@@ -32,7 +32,7 @@
                         <p>gasten: <span><?php echo $huis['gasten'] ?></span></p>
                     </div>
                 </div>
-                <form method="" action="">
+                <form method="POST" action="reserveren">
                     <button type="submit" class="noselect">Kopen</button>
                 </form>
             </div>
