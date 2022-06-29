@@ -29,12 +29,12 @@
                 <?php foreach($huizen as $huis): ?>
             <div class="grid_item">
                 <div class="big">
-                <p><?php echo $huis['omgeving'] ?>Breda</p>
+                <p><?php echo $huis['omgeving'] ?></p>
                 <img src="<?php ?>img/huis.jpg" class="img-fluid rounded-top" alt="">
                     <div class="desc">
                         <div class="spacing">
                             <p>prijs:  <span>&#8364; <?php echo $huis['prijs'] ?></span></p>
-                            <p>groote: <span><?php echo $huis['formaat'] ?>m</span></p>
+                            <p>groote: <span><?php echo $huis['formaat'] ?> m3</span></p>
                         </div>
                         <div class="spacing">
                             <p>slaapkamers: <span><?php echo $huis['slaapkamers'] ?></span></p>
