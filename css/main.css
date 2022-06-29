@@ -250,6 +250,20 @@ footer{
   width: 829px;
   height: 615px;
 }
+.details{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.info{
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #b3d4fc;
+  border-radius: 20px;
+}
 /*end buy page*/
 
 /* ==========================================================================
