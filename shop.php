@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php require_once 'head.php' ?>
+    
 </head>
 <body>
     <?php
@@ -33,7 +34,7 @@
                 <img src="<?php ?>img/huis.jpg" class="img-fluid rounded-top" alt="">
                     <div class="desc">
                         <div class="spacing">
-                            <p>prijs:  <span>&#8364; <?php echo $huis['prijs'] ?></span></p>
+                            <p> prijs:  <span>&#8364; <?php echo $huis['prijs'] ?></span></p>
                             <p>groote: <span><?php echo $huis['formaat'] ?> m3</span></p>
                         </div>
                         <div class="spacing">
@@ -43,7 +44,7 @@
                     </div>
                     <form method="POST" action="buy.php">
                         <input type="hidden" value="<?php echo $huis['id'] ?>" name="id">
-                        <button type="submit" class="button-10">Kopen</button>
+                        <button type="submit" class="button-10">Bekijk</button>
                     </form>
                 </div>
             </div>
