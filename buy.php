@@ -21,6 +21,7 @@
                 <img class="buyImage" src="img/<?php echo $huis["img"] ?>">
             </div>
             <div class="detail">
+                <div class="titel"><h1>Details</div>
                 <div class="centering"><p>Omgeving:  <?php echo $huis['omgeving'] ?></p></div>
                 <div class="info">
                     <div>
@@ -32,7 +33,11 @@
                         <p>gasten: <span><?php echo $huis['gasten'] ?></span></p>
                     </div>
                 </div>
-                <form method="POST" action="reserveren">
+                <div class="wrapper">
+                    <div><p>Overige informatie:</p></div>
+                    <p>Stofzijgers Binnenbad, WiFi, TV, Afwasmachine, Wasmachine, Houtkachel, Verwarming, Hoge kinderstoel, Douche, Ligbad, Bagageopslag</p>
+                </div>
+                <form method="POST" action="reserveren.php" class="centering">
                     <button type="submit" class="noselect">Kopen</button>
                 </form>
             </div>
