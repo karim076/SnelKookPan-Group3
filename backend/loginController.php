@@ -40,7 +40,7 @@
     $_SESSION['username'] = $user["username"];
     $_SESSION['name'] = $user["name"];
     $_SESSION['email'] = $user['email'];
-    $_SESSION['role'] = $user['role'];
+    $_SESSION['role'] = $user['status'];
     header("location: $base_url/index.php");
     exit;
 ?>
