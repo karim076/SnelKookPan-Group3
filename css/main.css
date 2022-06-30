@@ -311,6 +311,17 @@ background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, r
   justify-content: center;
   align-items: center;
 }
+.titel{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 97px;
+}
 /*end buy page*/
 
 /* ==========================================================================
