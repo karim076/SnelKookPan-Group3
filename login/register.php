@@ -35,7 +35,7 @@
           
           <div class="login__field">
             <i class="login__icon fas fa-lock"></i>
-            <input type="password" class="login__input" name="pass" placeholder="Wachtwoord" required>
+            <input type="password" class="login__input form__input" name="pass" pattern=".{6,}" placeholder="Wachtwoord" required><span class="icon"></span>
           </div>
 
           <input type="submit"  class="button login__submit">
