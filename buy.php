@@ -39,6 +39,8 @@
                 </div>
                 <form method="POST" action="reserveren.php" class="centering">
                     <button type="submit" class="noselect">Kopen</button>
+                    <input type="hidden" value="<?php echo $huis['id'] ?>" name="id">
+                    <input type="hidden" value="<?php echo $huis['gasten'] ?>" name="id">
                 </form>
             </div>
         </div>
