@@ -2,6 +2,9 @@
 <html lang="nl">
 <head>
     <?php require_once 'head.php'; ?>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alumuko/vanilla-datetimerange-picker@latest/dist/vanilla-datetimerange-picker.css">
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alumuko/vanilla-datetimerange-picker@latest/dist/vanilla-datetimerange-picker.js"></script>
 </head>
 <body class="bg">
     <?php require_once 'header.php'; ?>
@@ -11,19 +14,29 @@
             <ul>
             <li>
                 <label for="name">Aantal personen</label>
-                <input type="number" max="5" name="name">
+                <input type="number" max="5" name="name" required>
                 <span>Vul het aantal mensen die het huis gaan bezoeken</span>
             </li>
             <li>
-                <label for="start">Start datum:</label>
-                <input type="date" id="start" name="trip-start" value="<?php echo $show = date("Y-m-d") ?>" min="<?php echo date("Y-m-d") ?>" max="<?php $Date = date("Y-m-d"); echo date('Y-m-d', strtotime($Date. ' + 1 month'));?>">
+                <input type="text" id="datetimerange-input1" size="24" style="text-align:center" min="<?php echo date("d-m-Y") ?>" max="<?php echo date("01-07-2022") ?>" required>
                 <span>Waneer wilt u het huis huren</span>
+                <script>
+                    window.addEventListener("load", function (event) {
+                    new DateRangePicker('datetimerange-input1');
+                });
+        </script>
             </li>
-            <li>
+            <!-- <li>
+                <script type="text/javascript">
+                var start = document.querySelector('start');
+                start.onclick = function() {
+                $("#end").val(start)
+                }
+                </script>
                 <label for="start">Eind datum:</label>
-                <input type="date" id="end" name="trip-end" value="<?php echo $show?>" min="<?php echo date("Y-m-d") ?>" <?php $Date = date("Y-m-d"); echo date('Y-m-d', strtotime($Date. ' + 1 month'));?>">
+                <input type="date" id="end" name="trip-end" value="<?php //echo $show?>" min="<?php //echo date("Y-m-d") ?>" <?php //$Date = date("Y-m-d"); echo date('Y-m-d', strtotime($Date. ' + 1 month'));?>">
                 <span>Einde huur dag</span>
-            </li>
+            </li> -->
             <li>
                 <label for="email">Email</label>
                 <input type="email" name="email" maxlength="100">
