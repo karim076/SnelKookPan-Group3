@@ -11,9 +11,9 @@ if($_POST['reserveren'] == "reserveren")
     $vraag = $_POST[''];
     $order_number = rand(100,1000) + rand(10,10000);
 
-    if(empty($email) and empty($datum) and empty($personen) and empty($adress) and empty($straatnaam) and empty($nummer) and empty($duration) )
+    if(empty($email) and empty($datum) and empty($personen) and empty($adress) and empty($straatnaam) and empty($nummer) and empty($vraag) )
     {
-        $errors[] = "Vul een datum in!";
+        $_SESSION["error_reservatie"] = "Er is iets mis gegaan contacteer ons of probeer opnieuw";
     }
 
     if(empty($duration))
