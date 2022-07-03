@@ -8,7 +8,6 @@
 </head>
 <body class="bg">
     <?php require_once 'header.php'; ?>
-    
     <main>
         <div class="inBetween">
             <div>
@@ -32,7 +31,6 @@
                         </li>
                         <li>
                             <label for="question">Vragen</label>
-                            <!-- <input type="question" name="question" maxlength="100"> -->
                             <textarea name="question" rows="5" cols="50"></textarea>
                             <span>Enter a valid email address</span>
                         </li>
