@@ -9,6 +9,12 @@
 <body class="bg">
     <?php require_once 'header.php'; ?>
     <main>
+        <?php // Controlle of er een error fout is bij een indirectie.
+        if (isset($_SESSION["error_reservatie"]))
+        {
+            echo "<div class='msgResarvatie'><p>", $_SESSION["error_reservatie"], "</p></div>";
+        }?>
+        <div class="msgResarvatie">Er is iets mis gegaan contacteer ons of probeer opnieuw</div>
         <form method="POST" action="backend/reserveringController.php" id="reserveren" class="form-style-7">
             <div class="inBetween">
                 <div class="space">
@@ -58,12 +64,12 @@
                 </div>
             </div>
             <div>
-                <button type="submit"></button>
+            <button type="submit" value="reserveren">Verzenden</button>
             </div>
         </form>
     </main>
 
-    <script type="text/javascript">
+    <script type="text/javascript">// voor het datum groote
         //auto expand textarea
         function adjust_textarea(h) {
             h.style.height = "20px";
