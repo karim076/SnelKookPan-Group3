@@ -19,7 +19,7 @@ if($_POST['reserveren'] == "reserveren")
     //1. Verbinding
     require_once 'conn.php';
     //2. Query
-    $query = "INSERT INTO reserveren(email,datum,personen,adress,straatnaam,nummer,vraag,order_number) VALUES(:email,:datum,:personen,:adress,:straatnaam,:nummer,:vraag,:order_number)";
+    $query = "INSERT INTO reservering(email,datum,personen,adress,straatnaam,nummer,vraag,order_number) VALUES(:email,:datum,:personen,:adress,:straatnaam,:nummer,:vraag,:order_number)";
     //3. Prepare
     $statement=$conn->prepare($query);
     //4. Execute
@@ -27,11 +27,11 @@ if($_POST['reserveren'] == "reserveren")
     ([
         ":email" => $email,
         ":datum" => $datum,
-        ":datum" => $datum,
         ":personen" => $personen,
         ":adress" => $adress,
         ":straatnaam" => $straatnaam,
         ":nummer" => $nummer,
+        ":vraag" => $vraag,
         ":order_number" => $order_number
     ]);
 
