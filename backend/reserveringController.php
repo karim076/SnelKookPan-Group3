@@ -12,42 +12,30 @@ if($_POST['reserveren'] == "reserveren")
     $order_number = rand(100,1000) + rand(10,10000);
 
     if(empty($email) and empty($datum) and empty($personen) and empty($adress) and empty($straatnaam) and empty($nummer) and empty($vraag) )
-    {
+    {   // error message
         $_SESSION["error_reservatie"] = "Er is iets mis gegaan contacteer ons of probeer opnieuw";
-    }
-
-    if(empty($duration))
-    {
-        $errors[] = "Vul een duur in!";
-    }
-
-    if(empty($department))
-    {
-        $errors[] = "Vul een afdeling in!";
-    }
-
-    //Evt. errors dumpen
-    if(isset($errors))
-    {
-        var_dump($errors);
-        die();
+        header("location: http://localhost/$base_url/reserveren.php");
     }
     //1. Verbinding
     require_once 'conn.php';
     //2. Query
-    $query = "INSERT INTO logs(user,dates,duration,department) VALUES(:user,:dates,:duration,:department)";
+    $query = "INSERT INTO reserveren(email,datum,personen,adress,straatnaam,nummer,vraag,order_number) VALUES(:email,:datum,:personen,:adress,:straatnaam,:nummer,:vraag,:order_number)";
     //3. Prepare
     $statement=$conn->prepare($query);
     //4. Execute
     $statement->execute
     ([
-        ":user" => $user,
-        ":dates" => $dates,
-        ":duration" => $duration,
-        ":department" => $department
+        ":email" => $email,
+        ":datum" => $datum,
+        ":datum" => $datum,
+        ":personen" => $personen,
+        ":adress" => $adress,
+        ":straatnaam" => $straatnaam,
+        ":nummer" => $nummer,
+        ":order_number" => $order_number
     ]);
 
-    header("location: http://localhost/Tweede%20Periode/H13_Timesheed/index.php");
+    header("location: http://localhost/$base_url/index.php");
     exit;
 }
 
