@@ -590,7 +590,12 @@ background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, r
 [hidden] {
   display: none !important;
 }
-
+/* row */
+.inBetween{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
