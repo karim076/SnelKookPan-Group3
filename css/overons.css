@@ -1,1 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:  border-box;
+    font-family: 'poppins', sans-serif;
+}
+.section{ 
+    width: 100%; 
+} 
+
+.section .container{
+    width: 80%; 
+    display: block;
+    margin: 0px auto;
+     padding: 50px 0px;
+}
+.section .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section .title{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #88941e;
+}
+.section .title h1::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #c4d156;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.content .article h3{
+    color: #a3a3a3;
+    font-size: 17px;
+}
+.button{
+    text-align: center;
+    padding: 9px 30px;
+}
+.moreText {
+    display: none;
+  }
+  .article.show-more .moreText {
+    display: inline;
+  }
+  .readMoreBtn {
+    padding: 15px 60px;
+    background-color: #c4d156;;
+    color: rgb(53, 49, 49);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .dots {
+    display: inline-block;
+  }
+  .article.show-more .dots {
+    display: none;
+  }
