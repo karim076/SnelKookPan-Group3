@@ -62,7 +62,7 @@
                 </form>
             </div>
         </div>
-        <form method="" action="">
+        <form method="POST" action="backend/reserveringController.php">
     </main>
     <script type="text/javascript">
         //auto expand textarea
