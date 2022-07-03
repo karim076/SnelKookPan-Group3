@@ -471,7 +471,7 @@ background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, r
  */
 /* form 8 reserveren page */
 .form-style-7{
-	max-width:400px;
+	max-width:623px;
 	margin:50px auto;
 	background:#fff;
 	border-radius:2px;
@@ -594,7 +594,10 @@ background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, r
 .inBetween{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.space{
+  padding: 10px;
 }
 /*
  * Hide only visually, but have it available for screen readers:
