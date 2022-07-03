@@ -9,37 +9,35 @@
 <body class="bg">
     <?php require_once 'header.php'; ?>
     <main>
-        <div class="inBetween">
-            <div>
-                <form method="POST" action="backend/reserveringController.php" id="reserveren" class="form-style-7">
-                    <label>Reservatie</label>
-                    <ul>
-                        <li>
-                            <label for="gasten">Aantal personen</label>
-                            <input type="number" max="<?php echo $_POST['personen'] ?>" name="gasten" required>
-                            <span>Vul het aantal mensen die het huis gaan bezoeken</span>
-                        </li>
-                        <li>
-                            <label for="datepick">Datum</label>
-                            <input name="datepick" type="text" id="datetimerange-input1" size="24" style="text-align:center" min="<?php echo date("d-m-Y") ?>" max="<?php echo date("01-07-2022") ?>" required>
-                            <span>Waneer wilt u het huis huren</span>
-                            <script>
-                                window.addEventListener("load", function (event) {
-                                new DateRangePicker('datetimerange-input1');
-                            });
-                            </script>
-                        </li>
-                        <li>
-                            <label for="question">Vragen</label>
-                            <textarea name="question" rows="5" cols="50"></textarea>
-                            <span>Enter a valid email address</span>
-                        </li>
-                    </ul>
-                </form>
-            </div>
-            <div>
-                <form method="POST" action="backend/reserveringController.php" id="contact" class="form-style-7">
-                    <label>Contact</label>
+        <form method="POST" action="backend/reserveringController.php" id="reserveren" class="form-style-7">
+            <div class="inBetween">
+                <div class="space">
+                        <label>Reservatie:</label>
+                        <ul>
+                            <li>
+                                <label for="gasten">Aantal personen</label>
+                                <input type="number" max="<?php echo $_POST['personen'] ?>" name="gasten" required>
+                                <span>Vul het aantal mensen die het huis gaan bezoeken</span>
+                            </li>
+                            <li>
+                                <label for="datepick">Datum</label>
+                                <input name="datepick" type="text" id="datetimerange-input1" size="24" style="text-align:center" min="<?php echo date("d-m-Y") ?>" max="<?php echo date("01-07-2022") ?>" required>
+                                <span>Waneer wilt u het huis huren</span>
+                                <script>
+                                    window.addEventListener("load", function (event) {
+                                    new DateRangePicker('datetimerange-input1');
+                                });
+                                </script>
+                            </li>
+                            <li>
+                                <label for="question">Vragen</label>
+                                <textarea name="question" rows="3" cols="50"></textarea>
+                                <span>Enter a valid email address</span>
+                            </li>
+                        </ul>
+                </div>
+                <div class="space">
+                    <label>Contact:</label>
                     <ul>
                         <li>
                             <label for="Adres">Adress</label>
@@ -57,27 +55,15 @@
                             <span>Uw telefoon nummer hier invullen</span>
                         </li>
                     </ul>
-                </form>
+                </div>
             </div>
-        </div>
-        <form method="POST" action="backend/reserveringController.php">
-        <script type="text/javascript">
-            // submits 2 forms tegelijkertijd
-            submitForms = function(){
-            document.getElementById("reserveren").submit();
-            document.getElementById("contact").submit();
-            }
-        </script>
-            <button type="submit" value="reserveren" onclick="submitForms()">Verzenden</button>
+            <div>
+                <button type="submit"></button>
+            </div>
         </form>
     </main>
 
     <script type="text/javascript">
-        // submits 2 forms tegelijkertijd
-        submitForms = function(){
-        document.getElementById("reserveren").submit();
-        document.getElementById("contact").submit();
-        }
         //auto expand textarea
         function adjust_textarea(h) {
             h.style.height = "20px";
