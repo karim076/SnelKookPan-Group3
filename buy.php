@@ -1,3 +1,13 @@
+<?php
+require_once 'backend/conn.php';
+session_start();
+if(!isset($_SESSION['user_id']))
+{
+    $msg="Je moet eerst inloggen!"; 
+    header("Location: $base_url/login/login.php?msg=$msg");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
