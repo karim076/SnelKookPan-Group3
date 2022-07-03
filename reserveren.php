@@ -9,12 +9,14 @@
 <body class="bg">
     <?php require_once 'header.php'; ?>
     <main>
-        <?php // Controlle of er een error fout is bij een indirectie.
-        if (isset($_SESSION["error_reservatie"]))
-        {
-            echo "<div class='msgResarvatie'><p>", $_SESSION["error_reservatie"], "</p></div>";
-        }?>
-        <div class="msgResarvatie">Er is iets mis gegaan contacteer ons of probeer opnieuw</div>
+        <div class="errorMessage">
+            <?php // Controlle of er een error fout is bij een indirectie.
+            if (isset($_SESSION["error_reservatie"]))
+            {
+                echo "<div class='msgReservatie'><p>", $_SESSION["error_reservatie"], "</p></div>";
+            }?>
+            <div class="msgReservatie">Er is iets mis gegaan contacteer ons of probeer opnieuw</div>
+        </div>
         <form method="POST" action="backend/reserveringController.php" id="reserveren" class="form-style-7">
             <div class="inBetween">
                 <div class="space">
@@ -22,14 +24,14 @@
                         <ul>
                             <li>
                                 <label for="gasten">Aantal personen</label>
-                                <input type="number" max="<?php echo $_POST['personen'] ?>" name="gasten" required>
+                                <input type="number" max="<?php echo $_POST['personen'] ?>" name="personen" required>
                                 <span>Vul het aantal mensen die het huis gaan bezoeken</span>
                             </li>
                             <li>
                                 <label for="datepick">Datum</label>
-                                <input name="datepick" type="text" id="datetimerange-input1" size="24" style="text-align:center" min="<?php echo date("d-m-Y") ?>" max="<?php echo date("01-07-2022") ?>" required>
+                                <input name="datum" type="text" id="datetimerange-input1" size="24" style="text-align:center" min="<?php echo date("d-m-Y") ?>" max="<?php echo date("01-07-2022") ?>" required>
                                 <span>Waneer wilt u het huis huren</span>
-                                <script>
+                                <script>//range picker in js
                                     window.addEventListener("load", function (event) {
                                     new DateRangePicker('datetimerange-input1');
                                 });
@@ -37,7 +39,7 @@
                             </li>
                             <li>
                                 <label for="question">Vragen</label>
-                                <textarea name="question" rows="3" cols="50"></textarea>
+                                <textarea name="vraag" rows="3" cols="50"></textarea>
                                 <span>Enter a valid email address</span>
                             </li>
                         </ul>
