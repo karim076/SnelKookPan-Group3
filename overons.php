@@ -21,13 +21,19 @@
                 <div class="article">
                     <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         Ipsam beatae sit alias veniam nam laborum placeat laudantium! Ratione, 
-                        vero ipsum, laboriosam repellat optio eveniet nostrum dicta asperiores.</h3>
-                        <p>velit quod officia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        vero ipsum, laboriosam repellat optio eveniet nostrum dicta asperiores.<span class="dots"> ...</span><span class="moreText"></h3>
+                        <p class>velit quod officia? Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Ut delectus magnam in, nobis maiores exercitationem sed aliquam doloribus, 
                         repellendus, molestiae cum modi tempore autem consequuntur. A praesentium 
-                        ducimus et libero</p>
+                        ducimus et libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Debitis sunt rerum atque cupiditate? Vitae, ea cupiditate repudiandae, praesentium, 
+                        accusantium autem molestiae ab quasi architecto veniam quidem sapiente cum eum quia!. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, in nesciunt! Amet 
+                        voluptate aut exercitationem quas! Libero voluptas, excepturi itaque, sed officia 
+                        nesciunt, veniam ipsa harum necessitatibus est suscipit recusandae!</span>
+                    </p>
                         <div class="button">
-                            <a href="">Read More</a>
+                            <button class="readMoreBtn">Read More</button>
                     </div>
                 </div>
             </div>
