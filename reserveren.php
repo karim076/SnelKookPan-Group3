@@ -12,7 +12,7 @@
     <main>
         <div class="inBetween">
             <div>
-                <form class="form-style-7">
+                <form method="POST" action="backend/reserveringController.php" id="reserveren" class="form-style-7">
                     <label>Reservatie</label>
                     <ul>
                         <li>
@@ -40,7 +40,7 @@
                 </form>
             </div>
             <div>
-                <form class="form-style-7">
+                <form method="POST" action="backend/reserveringController.php" id="contact" class="form-style-7">
                     <label>Contact</label>
                     <ul>
                         <li>
@@ -63,8 +63,16 @@
             </div>
         </div>
         <form method="POST" action="backend/reserveringController.php">
+            <button type="submit" value="reserveren" onclick="submitForms()">Verzenden</button>
+        </form>
     </main>
+
     <script type="text/javascript">
+        // submits 2 forms tegelijkertijd
+        submitForms = function(){
+        document.getElementById("reserveren").submit();
+        document.getElementById("contact").submit();
+        }
         //auto expand textarea
         function adjust_textarea(h) {
             h.style.height = "20px";
