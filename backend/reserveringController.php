@@ -9,7 +9,7 @@ if($_POST['reserveren'] == "reserveren")
     $straatnaam = $_POST[''];
     $nummer = $_POST[''];
     $vraag = $_POST[''];
-    $order_number = ;
+    $order_number = rand(100,1000) + rand(10,10000);
 
     if(empty($email) and empty($datum) and empty($personen) and empty($adress) and empty($straatnaam) and empty($nummer) and empty($duration) )
     {
