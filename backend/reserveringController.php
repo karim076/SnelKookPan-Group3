@@ -3,12 +3,12 @@ if($_POST['reserveren'] == "reserveren")
 {
     session_start();
     $email = $_SESSION['email'];
-    $datum = $_POST[''];
-    $personen = $_POST[''];
-    $adress = $_POST[''];
-    $straatnaam = $_POST[''];
-    $nummer = $_POST[''];
-    $vraag = $_POST[''];
+    $datum = $_POST['datum'];
+    $personen = $_POST['personen'];
+    $adress = $_POST['adress'];
+    $straatnaam = $_POST['straatnaam'];
+    $nummer = $_POST['nummer'];
+    $vraag = $_POST['vraag'];
     $order_number = rand(100,1000) + rand(10,10000);
 
     if(empty($email) and empty($datum) and empty($personen) and empty($adress) and empty($straatnaam) and empty($nummer) and empty($vraag) )

@@ -48,18 +48,18 @@
                     <label>Contact:</label>
                     <ul>
                         <li>
-                            <label for="Adres">Adress</label>
-                            <input type="text"  name="Adres" required>
+                            <label for="adress">Adress</label>
+                            <input type="text"  name="adress" required>
                             <span>Vul hier uw adress in</span>
                         </li>
                         <li>
-                            <label for="streetname">Straatnaam</label>
-                            <input name="streetname" type="text" required>
+                            <label for="straatnaam">Straatnaam</label>
+                            <input name="straatnaam" type="text" required>
                             <span>Vul hier uw straatnaam</span>
                         </li>
                         <li>
-                            <label for="number">Telefoon nummer</label>
-                            <input type="number" name="number">
+                            <label for="nummer">Telefoon nummer</label>
+                            <input type="number" name="nummer">
                             <span>Uw telefoon nummer hier invullen</span>
                         </li>
                     </ul>
