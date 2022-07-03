@@ -45,7 +45,7 @@
                     <ul>
                         <li>
                             <label for="Adres">Adress</label>
-                            <input type="number"  name="Adres" required>
+                            <input type="text"  name="Adres" required>
                             <span>Vul hier uw adress in</span>
                         </li>
                         <li>
@@ -55,7 +55,7 @@
                         </li>
                         <li>
                             <label for="number">Telefoon nummer</label>
-                            <input type="number" name="question">
+                            <input type="number" name="number">
                             <span>Uw telefoon nummer hier invullen</span>
                         </li>
                     </ul>
@@ -63,6 +63,13 @@
             </div>
         </div>
         <form method="POST" action="backend/reserveringController.php">
+        <script type="text/javascript">
+            // submits 2 forms tegelijkertijd
+            submitForms = function(){
+            document.getElementById("reserveren").submit();
+            document.getElementById("contact").submit();
+            }
+        </script>
             <button type="submit" value="reserveren" onclick="submitForms()">Verzenden</button>
         </form>
     </main>
