@@ -5,12 +5,13 @@ if($_POST['reserveren'] == "reserveren")
     $email = $_SESSION['email'];
     $datum = $_POST[''];
     $personen = $_POST[''];
-    $_POST[''];
-    $_POST[''];
-    $_POST[''];
-    $_POST[''];
+    $adress = $_POST[''];
+    $straatnaam = $_POST[''];
+    $nummer = $_POST[''];
+    $vraag = $_POST[''];
+    $order_number = ;
 
-    if(empty($dates))
+    if(empty($email) and empty($datum) and empty($personen) and empty($adress) and empty($straatnaam) and empty($nummer) and empty($duration) )
     {
         $errors[] = "Vul een datum in!";
     }
