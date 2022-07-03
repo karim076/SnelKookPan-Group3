@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div>
-            <button type="submit" value="reserveren">Verzenden</button>
+            <button type="submit" value="reserveren" name="reserveren">Verzenden</button>
             </div>
         </form>
     </main>
