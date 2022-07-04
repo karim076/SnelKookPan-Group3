@@ -11,10 +11,11 @@ if($_POST['reserveren'] == "reserveren")
     $vraag = $_POST['vraag'];
     $order_number = rand(100,1000) + rand(10,10000);
 
-    if(empty($email) and empty($datum) and empty($personen) and empty($adress) and empty($straatnaam) and empty($nummer) and empty($vraag) )
+    if(!isset($email) and !isset($datum) and !isset($personen) and !isset($adress) and !isset($straatnaam) and !isset($nummer) and !isset($vraag) )
     {   // error message
         $_SESSION["error_reservatie"] = "Er is iets mis gegaan contacteer ons of probeer opnieuw";
-        header("location: http://localhost/$base_url/reserveren.php");
+        header("location: ../reserveren.php");
+        exit;
     }
     //1. Verbinding
     require_once 'conn.php';
@@ -35,7 +36,7 @@ if($_POST['reserveren'] == "reserveren")
         ":order_number" => $order_number
     ]);
 
-    header("location: http://localhost/$base_url/index.php");
+    header("location: ../index.php");
     exit;
 }
 
