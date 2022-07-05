@@ -16,6 +16,7 @@
 			error_reporting(E_ERROR | E_WARNING | E_PARSE);
 			session_start();
 			if(isset($_SESSION['user_id'])): ?>
+				<a href="<?php echo $base_url?>/huren/index.php">Admin |</a>
 				<i class="fa fa-fw fa-user"></i>Welcome,<?php echo $_SESSION['name'] ?>
 				<a href="<?php echo $base_url?>/login/logout.php">Uitloggen</a>
 
