@@ -8,16 +8,16 @@
     <main>
         <div class="Form_Container">
         <div class="form-style-3">
-            <form>
+            <form action="../backend/createController.php" method="POST">
                 <fieldset><legend>Create</legend>
-                <label for="field1"><span>Omgeving <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
-                <label for="field2"><span>Prijs <span class="required">*</span></span><input type="number" class="input-field" name="field2" value="" /></label>
-                <label for="field3"><span>Formaat <span class="required">*</span></span><input type="number" class="input-field" name="field3" value="" /></label>
-                <label for="field5"><span>Slaapkamers <span class="required">*</span></span><input type="number" class="input-field" name="field5" value="" /></label>
-                <label for="field6"><span>Gasten <span class="required">*</span></span><input type="text" class="input-field" name="field6" value="" /></label>
+                <label for="field1"><span>Omgeving <span class="required">*</span></span><input type="text" class="input-field" name="Omgeving" value="" /></label>
+                <label for="field2"><span>Prijs <span class="required">*</span></span><input type="number" class="input-field" name="Prijs" value="" /></label>
+                <label for="field3"><span>Formaat <span class="required">*</span></span><input type="number" class="input-field" name="Formaat" value="" /></label>
+                <label for="field5"><span>Slaapkamers <span class="required">*</span></span><input type="number" class="input-field" name="Slaapkamers" value="" /></label>
+                <label for="field6"><span>Gasten <span class="required">*</span></span><input type="number" class="input-field" name="Gasten" value="" /></label>
                 </fieldset>
                 <fieldset><legend>Image</legend>
-                <label for="field6"><span>Image <span class="required">*</span></span><input type="file" name="field6" ></label>
+                <label for="field6"><span>Image <span class="required">*</span></span><input type="file" name="Image" ></label>
                 <label><span> </span><input type="submit" value="Submit" /></label>
                 </fieldset>
             </form>
