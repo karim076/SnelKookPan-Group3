@@ -16,12 +16,12 @@
 			error_reporting(E_ERROR | E_WARNING | E_PARSE);
 			session_start();
 			if(isset($_SESSION['user_id'])): ?>
-				<a href="<?php echo $base_url?>/huren/index.php">Admin |</a>
 				<i class="fa fa-fw fa-user"></i>Welcome,<?php echo $_SESSION['name'] ?>
 				<a href="<?php echo $base_url?>/login/logout.php">Uitloggen</a>
 
 				<?php if(isset($_SESSION['role']) and  $_SESSION['role'] === "1" or $_SESSION['role'] === "2"):?><!-- role 0 = normal user/ role 1 = create only functions/role 2 = all functions(admin)  -->
 					<a href="<?php echo $base_url?>/Admin/adminPanel.php"><i class="fa fa-user-tie"></i>Verhuur</a>
+					<a href="<?php echo $base_url?>/huren/create.php">Admin</a>
 				<?php endif;?>
 			<?php else: ?>
 				<a href="<?php echo $base_url?>/login/register.php"><i class="fas fa-user-plus"></i> register</a>
