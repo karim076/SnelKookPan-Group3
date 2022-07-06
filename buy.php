@@ -48,7 +48,7 @@ if(!isset($_SESSION['user_id']))
                     <p>Stofzijgers Binnenbad, WiFi, TV, Afwasmachine, Wasmachine, Houtkachel, Verwarming, Hoge kinderstoel, Douche, Ligbad, Bagageopslag</p>
                 </div>
                 <form method="POST" action="reserveren.php" class="centering">
-                    <button type="submit" class="noselect">Kopen</button>
+                    <button type="submit" class="noselect">Huren</button>
                     <input type="hidden" value="<?php echo $huis['id'] ?>" name="id">
                     <input type="hidden" value="<?php echo $huis['gasten'] ?>" name="personen">
                 </form>
