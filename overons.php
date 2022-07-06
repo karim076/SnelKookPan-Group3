@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="image-section">
-                <img src="img/Vakantiehuis.jpg" alt="">
+                <img src="img/Vakantiehuis.jpg" alt="" id="OveronsImage">
             </div>
             <div class="social">
                 <a href=""><i class="fab fa-facebook-f"></i></a>
