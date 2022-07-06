@@ -15,7 +15,6 @@
             {
                 echo "<div class='msgReservatie'><p>", $_SESSION["error_reservatie"], "</p></div>";
             }?>
-            <div class="msgReservatie">Er is iets mis gegaan contacteer ons of probeer opnieuw</div>
         </div>
         <form method="POST" action="backend/reserveringController.php" id="reserveren" class="form-style-7">
             <div class="inBetween">
