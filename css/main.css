@@ -366,8 +366,26 @@ background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, r
   background-color: #000;
 }
 
+.adminA{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  background-color: #555555;
+  padding: 20px;
+}
 
+.adminA:hover{
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+}
 
+.adminnav{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 900px;
+}
 
 /* ==========================================================================
    Author's custom styles
