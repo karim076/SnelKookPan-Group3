@@ -1,5 +1,6 @@
 <?php 
 session_start();
 session_destroy();
-header("location: http://localhost/Tweede%20Periode/MOB/SnelKookPan-Group3/index.php")
+require_once '../backend/config.php';
+header("location: $base_url/index.php")
 ?>
