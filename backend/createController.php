@@ -57,17 +57,19 @@
         echo "Sorry, there was an error uploading your file.";
         }
     }
+    $Image = $_FILES["Image"]["name"];
     //
     
     require_once 'conn.php';
-    $query = "INSERT INTO huisinfo (Omgeving, Formaat, Slaapkamers, Gasten, Prijs) VALUES(:Omgeving, :Formaat, :Slaapkamers, :Gasten, :Prijs)";
+    $query = "INSERT INTO huisinfo (Omgeving, Formaat, Slaapkamers, Gasten, Prijs, Image) VALUES(:Omgeving, :Formaat, :Slaapkamers, :Gasten, :Prijs, :Image)";
     $statement = $conn->prepare($query);
     $statement->execute([
         ":Omgeving" => $Omgeving,
         ":Prijs" => $Prijs,
         ":Formaat" => $Formaat,
         ":Slaapkamers" => $Slaapkamers,
-        ":Gasten" => $Gasten
+        ":Gasten" => $Gasten,
+        ":Image" => $Image
         ]);
     // header("Location:../Task/index.php?msg=Taak opgeslagen");
 
