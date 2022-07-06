@@ -29,7 +29,7 @@
 								<th>Datum</th>
 								<th>Personen</th>
 								<th>Straatnaam</th>
-								<th>Nummer</th>
+								<th>Telefoon Nr</th>
 								<th>Vraag</th>
                                 <th>Order nummer</th>
                                 <th>Status</th>
