@@ -28,7 +28,7 @@ if(!isset($_SESSION['user_id']))
     <main>
         <div class="details">
             <div>
-                <img class="buyImage" src="img/<?php echo $huis["img"] ?>">
+                <img class="buyImage" src="img/<?php echo $huis["Image"] ?>">
             </div>
             <div class="detail">
                 <div class="titel"><h1>Details</div>
