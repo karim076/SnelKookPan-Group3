@@ -10,7 +10,7 @@
         <div class="contactmain">
             <div class="extramainc">
                 <div class="contactpagina">
-                    <h3>Contact:</h3>
+                    <h3 class="contacth3">Contact:</h3>
                     <p>Tel: 0598-398507</p>
                     <p>Mail: fred@snelkookpan.nl</p>
                 </div>
