@@ -21,7 +21,7 @@
 				<a href="<?php echo $base_url?>/login/logout.php">Uitloggen</a>
 
 				<?php if(isset($_SESSION['role']) and  $_SESSION['role'] === "1" or $_SESSION['role'] === "2"):?><!-- role 0 = normal user/ role 1 = create only functions/role 2 = all functions(admin)  -->
-					<a href="<?php echo $base_url?>/huren/create.php"><i class="fa fa-user-tie"></i>Verhuur</a>
+					<a href="<?php echo $base_url?>/Admin/adminPanel.php"><i class="fa fa-user-tie"></i>Verhuur</a>
 				<?php endif;?>
 			<?php else: ?>
 				<a href="<?php echo $base_url?>/login/register.php"><i class="fas fa-user-plus"></i> register</a>
