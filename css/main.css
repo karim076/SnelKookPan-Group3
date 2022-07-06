@@ -387,6 +387,29 @@ background: linear-gradient(45deg, rgba(2,0,36,0) 5%, rgba(255,255,255,.5) 6%, r
   height: 900px;
 }
 
+.contactpagina{
+}
+
+.openings{
+  font-size: 20px;
+}
+
+.openingsuren{
+  margin-bottom: 30px;
+}
+
+.contactmain{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.extramainc{
+  display: flex;
+  flex-direction: column;
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
