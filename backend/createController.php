@@ -71,6 +71,6 @@
         ":Gasten" => $Gasten,
         ":Image" => $Image
         ]);
-    // header("Location:../Task/index.php?msg=Taak opgeslagen");
+    header("Location: $base_url/shop.php");
 
 ?>
